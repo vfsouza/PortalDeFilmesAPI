@@ -145,6 +145,17 @@ function pesquisaFilmes() {
    xhr.send();
 }
 
+function pesquisaFilmesMob() {
+   count++;
+   let xhr = new XMLHttpRequest();
+
+   let query = document.getElementById('inputPesquisa2').value;
+
+   xhr.open ('GET', TMDB_ENDPOINT + '/search/movie?api_key=' + API_KEY + '&query=' + query + pt_BR);
+   xhr.onload = exibeCardsPesquisa;
+   xhr.send();
+}
+
 function exibeCardsPesquisa(evento2) {
    $('#carrousel-index').html('');
    $('#cards-index').html('');
