@@ -1,0 +1,556 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #e0e0e0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ver_trailer {
+    display: none;
+}
+
+.ver_entrevista {
+    display: none;
+}
+
+.search_mobile {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo_footer img{
+    width: 100px;
+}
+
+.plus {
+    margin: 20px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.plus2 {
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header {
+    width: 100%;
+    background-color: #424242;
+    padding: 8px 30px 0px 30px;
+}
+
+/* Menu Moblie - Inicio */
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width:812px) {
+
+    .header nav {
+        display: absolute;
+        width: 100%;
+        height: 00%;
+    }
+
+    .menu_area {
+        z-index: 100;
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+
+        -webkit-transition: height 0.3s ease-out;
+        -moz-transition: height 0.3s ease-out;
+        -o-transition: height 0.3s ease-out;
+        transition: height 0.3s;
+    }
+
+    .menu_area a {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .menu_area input {
+        display: block;
+        width: 40%;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        width: 50px;
+        position: absolute;
+        top: 30px;
+        right: -110px;
+        line-height: 60px;
+        z-index: 101;
+    }
+
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menuToggle:checked ~ label i:nth-child(1) {
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(1) {
+        display: block;
+    }
+
+    #menuToggle:checked ~ .menu_area {
+        height: 100%;
+    }
+}
+
+/* Menu Moblie - Fim */
+
+.footer {
+    color: #969696;
+    background-color: #424242;
+    padding: 8px 30px 5px 30px;
+}
+
+.footer_text {
+    padding: 6px;
+    padding-top: 12px;
+}
+
+.menu_area a {
+    font-weight: bold;
+    margin-top: 12px;
+    color: #a3a3a3;
+}
+
+.menu_area a:hover {
+    color: #ffffff;
+}
+
+.search_bar {
+    background-color: #e0e0e0;
+    border: 3px solid #313131;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    border-color: #adadad;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #adadad;
+}
+
+.lancamentos {
+    font-weight: bold;
+    text-align: center;
+    background: #aaaaaa;
+    padding: 20px;
+}
+
+.main {
+    width: 100%;
+    background: #d1d1d1;
+}
+
+.slide {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.slide iframe {
+    margin-left: 40px;
+}
+
+.destaque {
+    width: 100%;
+}
+
+.destaques {
+    margin-top: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.col_destaques {
+    justify-content: space-between;
+    font-size: 0px;
+    display: flex;
+}
+
+.categoria_filmes {
+    margin: 30px;
+    margin-top: 40px
+}
+
+.cards {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.cards div {
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.cards img {
+    max-height: 335px;
+}
+
+.cards .card-body {
+    padding: 8px;
+    text-align: center;
+}
+
+.container-fluid .avaliacoes {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.avaliacoes h1 {
+    margin-bottom: 20px;
+}
+
+.cards_avaliacoes div{
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.cards_avaliacoes .card-title {
+    padding: 8px;
+    padding-top: 10px;
+}
+
+.cards_avaliacoes .card-body {
+    margin: 0;
+    padding: 10px;
+}
+
+.entrevista {
+    padding-bottom: 30px;
+    background-color: #cecece;
+}
+
+.entrevistas {
+    font-weight: bold;
+    background: #b6b6b6;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.videos_entrevistas {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.filme_entrevista {
+    font-size: 1.25rem;
+}
+
+.entrevista_noborder {
+    border: 0 !important;
+}
+
+.text_entrevistas:nth-child(2) {
+    margin-left: 1px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.text_entrevistas2 {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.redes {
+    font-size: 2em;
+}
+
+.redes a {
+    color: #2f2f2f;
+}
+
+.infos {
+    margin-top: 20px;
+}
+
+.infos h3 {
+    padding-left: 20px;
+}
+
+.infos img {
+    width: 100%;
+}
+
+.infos_infos div {
+    padding-top: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #ccc;
+    margin: 0 28px;
+}
+
+.novidades .col-9 {
+    padding-right: 30px;
+}
+
+.novidades div {
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.novidades img {
+    padding-left: 20px;
+}
+
+@media screen and (min-width:813px) and (max-width:1024px) {
+    header input {
+        font-size: 0.8rem;
+    }
+    
+    header nav {
+        font-size: 0.81rem;
+    }
+
+    .search_mobile {
+        display: none;
+    }
+    
+    .ver_trailer {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .ver_entrevista {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .slide div iframe {
+        display: none;
+    }
+
+    .infos img {
+        display: none;
+    }
+
+    .novidades .col-3 img{
+        display: inline;
+    }
+
+    .destaque {
+        width: 100%;
+    }
+
+    .cards {
+        margin-left: 18px;
+        margin-bottom: 30px;
+    }
+
+    .cards .forth {
+        display: none;
+    }
+
+    .avaliacoes {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .cards_avaliacoes {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    .videos_entrevistas iframe {
+        display: none;
+    }
+
+    .text_entrevistas {
+        margin-bottom: 20px;
+    }
+
+    .menu-icon {
+        top: 18px;
+    }
+
+    .menu-icon i {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:812px) {
+    .search_desk {
+        display: none;
+    }
+
+    .ver_trailer {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .ver_entrevista {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .slide div iframe {
+        display: none;
+    }
+
+    .infos img {
+        display: none;
+    }
+
+    .novidades .col-3{
+        display: none;
+    }
+
+    .novidades .col-9 {
+        padding-right: 10px;
+    }
+
+    .destaque {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .cards {
+        margin-left: 18px;
+        margin-bottom: 30px;
+    }
+
+    .avaliacoes {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .cards_avaliacoes {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    .videos_entrevistas iframe {
+        display: none;
+    }
+
+    .text_entrevistas {
+        margin-bottom: 20px;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .menu-icon {
+        top: 18px;
+    }
+
+    .menu-icon i {
+        font-size: 2em;
+    }
+
+    .avaliacoes .third {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ver_trailer {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .destaques {
+        padding: 0px;
+        padding-left: 5px;
+        font-size: 0.9rem;
+    }
+
+    .ver_entrevista {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .slide div iframe {
+        display: none;
+    }
+
+    .infos img {
+        display: none;
+    }
+
+    .novidades .col-3{
+        display: none;
+    }
+    
+    .novidades .col-9 {
+        padding-right: 10px;
+    }
+
+    .cards {
+        padding-right: 0px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cards_avaliacoes {
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .videos_entrevistas iframe {
+        display: none;
+    }
+
+    .text_entrevistas {
+        margin-bottom: 20px;
+    }
+
+    .logo_footer {
+        display: none;
+    }
+
+    .menu-icon {
+        top: -55px;
+        right: -10px;
+    }
+}
