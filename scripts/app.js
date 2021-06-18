@@ -2,7 +2,7 @@ const TMDB_ENDPOINT = "https://api.themoviedb.org/3";
 const API_KEY = "a812957cbbeeecf7b27c9ea2160cb39d";
 const pt_BR = "&language=pt-BR";
 const IMG_PREFIX = 'https://image.tmdb.org/t/p/w500';
-var filmeCarrousel, filmeCards, filmesPesquisa = {results: []};
+var filmeCarrousel, filmeCards, filmesPesquisa;
 
 function carregaCardsFilmes() {
    let xhr = new XMLHttpRequest();
@@ -97,10 +97,12 @@ function abrirPag(id) {
          console.log('DEBUG: ', filmeCarrousel.results[i])
       }
    }
-   for(let i = 0; i < filmesPesquisa.results.length; i++) {
-      if(id == filmesPesquisa.results[i].id) {
-         localStorage.setItem('filmeAtual', JSON.stringify(filmesPesquisa.results[i]))
-         console.log('DEBUG: ', filmesPesquisa.results[i])
+   if(count > 0) {
+      for(let i = 0; i < filmesPesquisa.results.length; i++) {
+         if(id == filmesPesquisa.results[i].id) {
+            localStorage.setItem('filmeAtual', JSON.stringify(filmesPesquisa.results[i]))
+            console.log('DEBUG: ', filmesPesquisa.results[i])
+         }
       }
    }
    exibeFilmeAtual();
@@ -133,6 +135,7 @@ function exibeFilmeAtual() {
 };
 
 function pesquisaFilmes() {
+   var count = 0;
    let xhr = new XMLHttpRequest();
 
    let query = document.getElementById('inputPesquisa').value;
