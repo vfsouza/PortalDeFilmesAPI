@@ -25,10 +25,14 @@
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-times-circle"></i>
                 </label>
+                <nav class="nav justify-content-end menu_area">
+                    <input id="inputPesquisa" type="text" class="form-control search_bar btn-outline search_mobile" placeholder="Pesquisar filme">
+                    <button type="button" id="btnPesquisa" class="btn btn-light mt-2 mb-2 search_bar" onclick="pesquisaFilmes()"><i class="fas fa-search"></i></button>
+                </nav>
             </div>
             <div class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex mt-2 mb-2">
                 <input id="inputPesquisa" type="text" class="form-control search_bar btn-outline search_desk" placeholder="Pesquisar filme">
-                <button type="button" id="btnPesquisa" class="btn btn-light mt-2 mb-2" onclick="pesquisaFilmes()"><i class="fas fa-search"></i></button>
+                <button type="button" id="btnPesquisa" class="btn btn-light mt-2 mb-2 search_bar" onclick="pesquisaFilmes()"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
