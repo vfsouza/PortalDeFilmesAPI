@@ -2,7 +2,7 @@ const TMDB_ENDPOINT = "https://api.themoviedb.org/3";
 const API_KEY = "a812957cbbeeecf7b27c9ea2160cb39d";
 const pt_BR = "&language=pt-BR";
 const IMG_PREFIX = 'https://image.tmdb.org/t/p/w500';
-var filmeCarrousel, filmeCards, filmesPesquisa = [];
+var filmeCarrousel, filmeCards, filmesPesquisa = {results: []};
 
 function carregaCardsFilmes() {
    let xhr = new XMLHttpRequest();
