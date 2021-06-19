@@ -100,8 +100,7 @@ function abrirPag(id) {
    if(count > 0) {
       for(let i = 0; i < filmesPesquisa.results.length; i++) {
          if(id == filmesPesquisa.results[i].id) {
-            localStorage.setItem('filmeAtual', JSON.stringify(filmesPesquisa.results[i]))
-            console.log('DEBUG: ', filmesPesquisa.results[i])
+            window.location.href = `https://www.themoviedb.org/movie/${id}`
          }
       }
    }
